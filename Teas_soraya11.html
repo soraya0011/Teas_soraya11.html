@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กรอกข้อมูลผู้เรียน</title>
+</head>
+<body>
+    <p><b> ข้อมูลผู้สมัคร</b><p style="color:crimson;">(**ระบุ รหัสประจำตัวประชาชน และ วัน/เดือน/ปี เกิด เพื่อตรวจสอบข้อมูล)</p>
+    <p>*ระบุรหัสประจำตัวประชาชน:</p> <input id="txtnumberid" type="text" maxlength="13"/><br />
+    <p>*วัน/เดือน/ปี:</p><input type="date" name="BirthDate"
+    placeholder="วันเกิด" /><br /> <input type="submit" name="cmdlogin" value="ตรวจสอบ"> <input type="submit" name="cmdlogin" value="ยกเลิก">
+    <p>*สมัครโดยใช้คุณวุฒิ:</p><input id="chkV" type="checkbox" value="vb" />ปวช.<br />
+    <p style="color:MediumSeaGreen;"> ข้อมูลส่วนตัวผู้สมัคร</p>
+    <p>*ชื่อ-นามสกุล ผู้สมัคร: <select id="date" name="date">
+    <option vaiue="ชื่อนามสกุล">นาย</option>
+    <option value="ชื่อนามสกุล">นาง</option>
+  <option value="ชื่อนามสกุล">นางสาว</option><input id="Name"><input id="Name">
+    <h5>*เพศ : <select id="date" name="date">
+        <option vaiue="เพศ">เพศชาย</option>
+        <option value="เพศ">เพศหญิง</option>
+        <option value="เพศ">เพศทางเลือก</option></select>
+
+    <h5>*สัญชาติ : <select id="date" name="date">
+        <option vaiue="สัญชาติ">ไทย</option>
+        <option value="สัญชาติ">อินเดีย</option>
+        <option value="สัญชาติ">รัสเซีย</option></select>
+
+    <h5>*ศาสนา : <select id="date" name="date">
+        <option vaiue="ศาสนา">พุทธ</option>
+        <option value="ศาสนา">อิสลาม</option>
+        <option value="ศาสนา">พราหมณ์-ฮินดู</option></select>
+
+    <h5>*ความสามารถพิเศษ : <select id="date" name="date">
+        <option vaiue="ความสามารถพิเศษ">ไม่ระบุ</option></select>
+
+    <h5>*ความพิการ : <select id="date" name="date">
+        <option vaiue="ความพิการ">ไม่พิการ</option>
+        <option value="ความพิการ">พิการ</option></select>
+        <p style="color:MediumSeaGreen;"> ข้อมูลที่อยู่ทะเบียนบ้าน</p>  
+        <h5>*บ้านเลขที่ : <input id="Name" type="text" size="3"/>
+            *หมู่ : <input id="Name" type="text" size="5"/>
+            *ถนน : <input id="Name" type="text" size="15"/>
+        <h5>*จังหวัด : <select id="thai" name="thai">
+                <option value="จังหวัด">กรุงเทพมหานคร</option>
+                <option value="จังหวัด">ปราจีนบุรี</option>
+                <option value="จังหวัด">ชลบุรี</option>
+                <option value="จังหวัด">ระยอง</option>
+                <option value="จังหวัด">ตราด</option></select>
+            *โทรศัพท์บ้าน : <input id="Name" type="text" size="15"/>
+    <h5>*อำเภอ : <select id="thai" name="thai">
+        <option value="จังหวัด">- เลือก -</option>
+        <option value="จังหวัด">แขวงดุสิต</option>
+        <option value="จังหวัด">แขวงดินแดง</option>
+        <option value="จังหวัด">แขวงบางแค</option>
+        <option value="จังหวัด">แขวงคลองจั่น</option>
+        <option value="จังหวัด">แขวงบางซื่อ</option></select>
+            *โทรศัพท์มือถือ : <input id="Name" type="text" size="15"/>
+    <h5>*ตำบล : <select id="thai" name="thai">
+            <option value="จังหวัด">- เลือก -</option>
+            <option value="จังหวัด">แขวงดุสิต</option>
+            <option value="จังหวัด">แขวงดินแดง</option>
+            <option value="จังหวัด">แขวงบางแค</option>
+            <option value="จังหวัด">แขวงคลองจั่น</option>
+            <option value="จังหวัด">แขวงบางซื่อ</option></select>
+            *E-mail : <input id="Name" type="text" size="15"/>
+    <h5>*รหัสไปรษณีย์ : <input id="Name" type="text" size="8"/></h5>
+    <h4 style="color:green;">ข้อมูลที่อยู่ตามทะเบียน</h4>
+    <h5>*จบจากสถานศึกษา : <input id="Name" type="text" size="30"/>*ไม่ต้องระบุคำว่า โรงเรียน
+        <h5>สมัครโดยใช้คุณวุฒิ:
+    <h5>เกรดเฉลี่ยสะสม (GPA):<input type="radio" name="เกรด" value="like"><input id="Name" type="text" size="8"/> ระบุคำระหว่าง1.00-4.00
+        <h5>ปีที่สำเร็จการศึกษา : <input id="Name" type="text" size="5"/></h5>
+            <button type="submit">ยืนยันข้อมูล</button>
+<button type="button">เริ่มใหม่</button> (**กรุณาตรวจสอบข้อมูลของท่านให้เรียบร้อยก่อนทำการยืนยันข้อมูล)
+</body>
+
+</body>
+</html>
